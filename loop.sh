@@ -27,4 +27,11 @@ function for_each() {
 }
 
 all_in_one 1 2 3 4 5
-for_each 1 2 3 4 5 "6 7" "8 9 X"
+for_each a1 c2 d3 e4 f5 "6 7" "8 9 X"
+
+function z4each() {
+    for s in "$@"; do
+        echo "$s"
+    done
+}
+z4each a1 c2 d3 e4 f5 "6 7" "8 9 X"
