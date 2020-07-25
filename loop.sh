@@ -21,8 +21,7 @@ function all_in_one() {
 }
 
 function for_each() {
-    local text=$@
-    for i in ${text[*]}; do
+    for i in "$@"; do
         echo "each [${i}]"
     done
 }
