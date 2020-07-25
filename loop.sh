@@ -43,3 +43,5 @@ aaa=($(echo $ttt))
 for s in $aaa; do
     echo "one [${s}]"
 done
+
+echo ${#aaa[@]}
