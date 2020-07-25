@@ -35,3 +35,11 @@ function z4each() {
     done
 }
 z4each a1 c2 d3 e4 f5 "6 7" "8 9 X"
+
+
+IFS='\n' read -r aaa <<< "$ttt"
+
+aaa=($(echo $ttt))
+for s in $aaa; do
+    echo "one [${s}]"
+done
