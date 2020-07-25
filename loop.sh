@@ -22,7 +22,7 @@ function all_in_one() {
 
 function for_each() {
     for i in "$@"; do
-        echo "each [${i}]"
+        echo "[$(TZ="Asia/Shanghai" date "+%Y-%m-%d %H:%M:%S")] each [${i}]"
     done
 }
 
